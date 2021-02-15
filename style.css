@@ -1,0 +1,60 @@
+body {
+    font-family: 'Futura', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Arial', 'Meiryo UI', sans-serif;
+}
+
+p {
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3';
+}
+
+/*ヘッダーとフッターのCSS*/
+
+.header {
+    height: 100vh;
+    background-color: #cccccc;
+}
+
+.tab ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 48px;
+}
+
+.tab li {
+    list-style: none;
+    padding: 30px 15px 0 15px;
+}
+
+.tab a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.7rem;
+    color: #fff;
+    transition: 0.9s;
+}
+
+.tab a:hover {
+    color: #3d5cdb;
+}
+
+
+.header_title {
+    text-align: center;
+}
+
+.header_title {
+    color: #fff;
+    font-size: 2.8rem;
+    font-style: italic;
+}
+
+
+footer {
+    text-align: center;
+}
+
+footer p{
+        font-family: 'Futura';
+        color:#3d5cdb;
+    padding: 20px
+}
