@@ -37,6 +37,10 @@ p {
     color: #3d5cdb;
 }
 
+a:hover{
+    box-shadow: 2px 2px 12px rgba(51,51,51,0.4);
+}
+
 
 .header_title {
     text-align: center;
