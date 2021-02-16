@@ -6,21 +6,27 @@
 }
 
 .intro_con {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
     padding-bottom: 40px;
 }
 
+.intro_con img{
+    width: 50%;
+    height: auto;
+}
+
 
 .intro_group {
-    width: 40%;
     margin: 20px;
     text-align: center;
 }
 
 .intro_group p {
-    padding: 0 50px 20px 50px;
+    padding: 20px 32px 20px 32px;
     line-height: 32px;
     text-align: left;
     color: #333;
@@ -63,6 +69,10 @@
     padding: 30px;
     margin: 20px 10px;
         box-shadow: 2px 2px 4px rgba(51,51,51,0.3);
+}
+
+.courses_wrap img{
+    width: 60%;
 }
 
 .courses_wrap p {
