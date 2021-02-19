@@ -11,11 +11,9 @@
 }
 /*左右の矢印の位置を変える*/
 .slick-next {
-    right: 20px;
     z-index: 99;
 }
 .slick-prev {
-     left: 25px;
     z-index: 100;
 }
 /*スライド数のドットの色を変える*/
