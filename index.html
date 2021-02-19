@@ -14,6 +14,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" rel="stylesheet">
     <link rel="stylesheet" href="forSlick.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!--    ファビコンの設定-->
+   <link rel="shortcut icon" href="images/favicon.ico">
+    <!--ogpの設定-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Happy Hack">
+    <meta property="og:image" content="https://pedantic-ritchie-30032c.netlify.app/images/ogp.jpg">
+    <meta property="og:description" content="HappyHackの紹介サイトです。">
+
 </head>
 
 
@@ -34,7 +43,7 @@
 
     </div>
 
-    <div id="Introduction" class="sec1">
+    <div id="Introduction" class="sec1 fadein">
         <h2 class="sec_title">Introduction</h2>
 
         <div class="intro_con">
@@ -63,7 +72,7 @@
 
     </div>
 
-    <div id="Courses" class="sec2">
+    <div id="Courses" class="sec2 fadein">
         <h2 class="sec_title">Courses</h2>
         <div class="courses_con">
             <div class="courses_wrap">
@@ -127,7 +136,7 @@
         <div id="particles-js"></div>
     </div>
 
-    <div id="Images" class="sec3">
+    <div id="Images" class="sec3 fadein">
         <h2 class="sec_title">Images</h2>
         <ul class="slider">
             <li>
@@ -152,7 +161,7 @@
 
     </div>
 
-    <div id="Access" class="sec4">
+    <div id="Access" class="sec4 fadein">
         <h2 class="sec_title">Access</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.3129539477445!2d135.49025991496288!3d34.697285690909425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1613385554933!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
@@ -187,12 +196,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/ajax-loader.gif"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script>
-      $(".slider").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1
-      });
+        $(".slider").slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1
+        });
+
+    </script>
+    
+<!--    フェードイン用-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.fadein', {
+            duration: 800, // アニメーションの完了にかかる時間
+            viewFactor: 0.2, // 0~1,どれくらい見えたら実行するか
+            reset: false // 何回もアニメーション表示するか
+        });
+
     </script>
 
 </body>
