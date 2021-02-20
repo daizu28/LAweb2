@@ -144,19 +144,16 @@
                 <img src="images/hero.jpg">
             </li>
             <li>
-                <img src="images/hero2.jpg">
+                <img src="images/background2.jpg">
             </li>
             <li>
-                <img src="images/hero3.jpg">
+                <img src="images/background3.jpg">
             </li>
             <li>
-                <img src="images/hero.jpg">
+                <img src="images/background4.jpg">
             </li>
             <li>
-                <img src="images/hero2.jpg">
-            </li>
-            <li>
-                <img src="images/hero3.jpg">
+                <img src="images/background5.jpg">
             </li>
         </ul>
 
@@ -177,7 +174,7 @@
     <script>
         jQuery(function($) {
             $('.bg-switcher').bgSwitcher({
-                images: ['images/hero.jpg', 'images/hero2.jpg', 'images/hero3.jpg'], // 切り替え画像
+                images: ['images/hero.jpg', 'images/background2.jpg', 'images/background3.jpg', 'images/background4.jpg', 'images/background5.jpg'], // 切り替え画像
                 Interval: 3000, //切り替えの間隔 1000=1秒
                 loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
                 effect: "fade", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
@@ -185,7 +182,6 @@
                 easing: "swing", //エフェクトのイージング "swing" "linear"
             });
         });
-
     </script>
 
     <!--    パーティクル-->
@@ -198,12 +194,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script>
         $(".slider").slick({
-            dots: true,
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1
-        });
-
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    responsive: [{
+                                breakpoint: 480,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                },
+                    },],
+                                });
     </script>
 
     <!--    フェードイン用-->
@@ -212,11 +214,8 @@
         ScrollReveal().reveal('.fadein', {
             duration: 800, // アニメーションの完了にかかる時間
             viewFactor: 0.2, // 0~1,どれくらい見えたら実行するか
-            reset: false // 何回もアニメーション表示するか
+            reset: false, // 何回もアニメーション表示するか
         });
-
     </script>
 
-</body>
-
-</html>
+</body></html>
