@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
-.clearfix::after{
+.clearfix::after {
     content: "";
     display: block;
     height: 0;
@@ -11,18 +12,18 @@
     visibility: hidden;
 }
 
-.sp{
+.sp {
     display: none;
 }
 
 @media screen and (max-width:479px) {
-    
-    .pc{
+
+    .pc {
         display: none;
     }
-    
-    .sp{
+
+    .sp {
         display: block;
     }
-    
+
 }
