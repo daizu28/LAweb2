@@ -10,3 +10,19 @@
     clear: both;
     visibility: hidden;
 }
+
+.sp{
+    display: none;
+}
+
+@media screen and (max-width:479px) {
+    
+    .pc{
+        display: none;
+    }
+    
+    .sp{
+        display: block;
+    }
+    
+}
